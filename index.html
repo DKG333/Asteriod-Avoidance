@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Asteroid Avoidance</title>
+		<link rel="stylesheet" type="text/css" href="css/game.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div id="game">
+			<div id="gameUI">
+				<div id="gameIntro">
+					<h1>Good Luck</h1>
+					<p>please</p>
+					<p><a id="gamePlay" class="button" href="">Play</a></p>
+				</div>
+
+				<div id="gameStats">
+					<p>Time: <span class="gameScore"></span> seconds</p>
+					<p id="hitScore">Asteroids Hit: <span class="gameHitScore"></span></p>
+					<p><a class="gameReset" href="">Reset</a></p>
+				</div>
+
+				<div id="gameComplete">
+					<h1>Good Try P</h1>
+					<p>You Lsated: <span class="gameScore"></span> seconds!</p>
+					<p><a class="gameReset button" href="">git gud</a></p>
+				</div>
+
+			</div>
+
+			<canvas id="gameCanvas" width="800" height="600">
+				<!-- Fallback Here -->
+			</canvas>
+
+			<audio id="gameSoundBackground" loop>
+				<source src="sounds/background.mp3">
+			</audio>
+			<audio id="gameSoundThrust" loop>
+				<source src="sounds/thrust.ogg">
+				<source src="sounds/thrust.mp3">
+			</audio>
+			<audio id="gameSoundDeath">
+				<source src="sounds/death.ogg">
+				<source src="sounds/death.mp3">
+			</audio>
+
+		</div>
+	</body>
+</html>
